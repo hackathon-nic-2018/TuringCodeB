@@ -1,2 +1,9 @@
-// Bootstrap
-@import "../bootstrap/bootstrap";
+//Variables
+@import "variables";
+
+//Code Custom
+@import "global/header";
+
+html, body {
+  font-family: "freight-sans-pro",sans-serif !important;
+}

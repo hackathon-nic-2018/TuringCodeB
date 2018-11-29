@@ -1,13 +1,18 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
+import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker'
 import TuringRoutes from './routes'
+import store from './stores/stores'
+
 
 render(
+  <Provider store={store}>
     <Router>
       <TuringRoutes/>
-    </Router>,
+    </Router>
+  </Provider>,
   document.getElementById('root')
 )
 serviceWorker.unregister()
