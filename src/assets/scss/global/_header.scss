@@ -102,9 +102,10 @@
 
   .turing--content-1 {
     display: flex;
-    align-items: center;
+    //align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 1.4em;
   }
 
   .turing--content-2 {
@@ -112,6 +113,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 1.4em;
 
     img {
       width: 100%;

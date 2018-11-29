@@ -1,0 +1,20 @@
+//Turing BTN
+
+.sunica-btn-coffee {
+  background-color: #5E6D48;
+  color: #fff;
+  font-weight: bold;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  text-decoration: none;
+  font-family: 'mission_gothicregular', sans-serif;
+  margin-right: 5px;
+  outline: none;
+
+  &:hover {
+    color: #5E6D48;
+    background-color: transparent;
+    background-image: none;
+    border-color: #5E6D48;
+  }
+}

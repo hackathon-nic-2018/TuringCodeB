@@ -1,8 +1,14 @@
 //Variables
 @import "variables";
 
+//Font Awesome
+@import "awesome/awesome";
+
 //Code Custom
+@import "atoms/color";
+@import "atoms/button";
 @import "global/header";
+@import "atoms/attr";
 
 html, body {
   font-family: "freight-sans-pro",sans-serif !important;
