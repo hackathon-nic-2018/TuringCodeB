@@ -1,8 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/app/App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import { render } from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+import * as serviceWorker from './serviceWorker'
+import TuringRoutes from './routes'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-serviceWorker.unregister();
+render(
+    <Router>
+      <TuringRoutes/>
+    </Router>,
+  document.getElementById('root')
+)
+serviceWorker.unregister()
