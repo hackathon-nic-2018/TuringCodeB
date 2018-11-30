@@ -5,8 +5,8 @@ export default class BusinessLocation extends Component {
   render () {
     return (
       <span>
-        <h1 className="turing-marine turing--business-location justify-content-center turing--mt">
-          Negocios segun tu ubicaci&oacute;n - <span className="font-weight-bold turing-pink">Le&oacute;n</span>
+        <h1 className="animated fadeIn delay-2s turing-marine turing--business-location justify-content-center turing--mt">
+          Negocios según tu ubicaci&oacute;n - <span className="font-weight-bold turing-pink">Le&oacute;n</span>
         </h1>
         <div className={'row'}>
 
