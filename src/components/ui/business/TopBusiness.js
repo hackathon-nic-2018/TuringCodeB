@@ -10,59 +10,25 @@ export default class TopBusiness extends Component {
         </h2>
         <div className="row justify-content-center turing--tops">
 
-          <div className={'col-md-2 text-center'}>
-            <div className={'avatar shadow-sm'}>
-              <img src="/assets/media/img/business/1.jpg" alt="Imagen"/>
-            </div>
+          {
+            this.props.tops.map((business, index) => {
+              return (
+                <div className={'col-md-2 text-center'} key={index}>
+                  <div className={'avatar shadow-sm'}>
+                    <img src={business.image} alt="Imagen"/>
+                  </div>
 
-            <h6 className="font-weight-bold turing-gray-description">
-              Restaurante
-            </h6>
-          </div>
-
-          <div className={'col-md-2 text-center'}>
-            <div className={'avatar shadow-sm'}>
-              <img src="/assets/media/img/business/2.jpg" alt="Imagen"/>
-            </div>
-
-            <h6 className="font-weight-bold turing-gray-description">
-              Hotel Angel Azul
-            </h6>
-          </div>
-
-          <div className={'col-md-2 text-center'}>
-            <div className={'avatar shadow-sm'}>
-              <img src="/assets/media/img/business/3.jpeg" alt="Imagen"/>
-            </div>
-
-            <h6 className="font-weight-bold turing-gray-description">
-              Túrismo
-            </h6>
-          </div>
-
-          <div className={'col-md-2 text-center'}>
-            <div className={'avatar shadow-sm'}>
-              <img src="/assets/media/img/business/4.jpg" alt="Imagen"/>
-            </div>
-
-            <h6 className="font-weight-bold turing-gray-description">
-              Gastrónomia
-            </h6>
-          </div>
-
-          <div className={'col-md-2 text-center'}>
-            <div className={'avatar shadow-sm'}>
-              <img src="/assets/media/img/business/1.jpg" alt="Imagen"/>
-            </div>
-
-            <h6 className="font-weight-bold turing-gray-description">
-              Túrismo
-            </h6>
-          </div>
-
+                  <h6 className="font-weight-bold turing-gray-description">
+                    {business.name}
+                  </h6>
+                </div>
+              )
+            })
+          }
         </div>
       </span>
     )
   }
 }
+
 

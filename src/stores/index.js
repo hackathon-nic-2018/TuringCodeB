@@ -1,9 +1,11 @@
-import { STORE_HOME, STORE_NAV, STORE_SOCIAL_NAV } from '../config/config'
+import { STORE_BUSINESS_LOCATION, STORE_BUSINESS_TOPS, STORE_HOME, STORE_NAV, STORE_SOCIAL_NAV } from '../config/config'
 
 let defaultState = {
   navigationturing: [],
   socialmedia: [],
-  contenthome: []
+  contenthome: [],
+  businesslocation: [],
+  tops: [],
 }
 
 const reducer = (state = defaultState, action) => {
@@ -33,6 +35,24 @@ const reducer = (state = defaultState, action) => {
       return {
         ...state,
         contenthome: action.contenthome
+      }
+
+    /**
+     * Redux Busines Location
+     */
+    case STORE_BUSINESS_LOCATION:
+      return {
+        ...state,
+        businesslocation: action.businesslocation
+      }
+
+    /**
+     * Redux Busines tops
+     */
+    case STORE_BUSINESS_TOPS:
+      return {
+        ...state,
+        tops: action.tops
       }
 
     default:

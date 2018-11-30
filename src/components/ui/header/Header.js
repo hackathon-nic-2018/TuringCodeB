@@ -16,17 +16,17 @@ export default class Header extends Component {
 
         <ul className="nav">
           <li className="nav-item">
-            <a className="nav-link active" href="#">
+            <a className="nav-link active" href="https://www.facebook.com/ZonegNicaragua" target={'blank'}>
               <i className={'fab fa-facebook-square fa-2x'}/>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="https://www.instagram.com/zonegnicaragua/" target={'blank'}>
               <i className={'fab fa-instagram fa-2x'}/>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="https://twitter.com/Zoneg_Nicaragua" target={'blank'}>
               <i className={'fab fa-twitter fa-2x'}/>
             </a>
           </li>

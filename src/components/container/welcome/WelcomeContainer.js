@@ -7,7 +7,7 @@ export default class WelcomeContainer extends Component {
       <div className={'content'}>
         <div className={'container-fluid turing--container-banner'}>
           {/*<img className={'phone'} src={'/assets/media/img/home/phone.png'} alt={'Phone'}/>*/}
-          <img className={'confitte'} src={'/assets/media/img/home/confetti-right@2x.png'} alt={'Confitte 1'}/>
+         {/* <img className={'confitte'} src={'/assets/media/img/home/confetti-right@2x.png'} alt={'Confitte 1'}/>*/}
           <img className={'confitte2'} src={'/assets/media/img/home/confetti-left@2x.png'} alt={'Confitte 2'}/>
 
           <div className={'container'}>

@@ -1,5 +1,13 @@
 import axios from 'axios'
-import { server_api, STORE_HOME, STORE_NAV, STORE_SOCIAL_NAV, version_api } from '../config/config'
+import {
+  server_api,
+  STORE_BUSINESS_LOCATION,
+  STORE_BUSINESS_TOPS,
+  STORE_HOME,
+  STORE_NAV,
+  STORE_SOCIAL_NAV,
+  version_api
+} from '../config/config'
 
 /**
  *
@@ -47,6 +55,40 @@ export function ContentHome () {
       dispatch({
         type: STORE_HOME,
         contenthome: response.data
+      })
+    })
+  }
+}
+
+/**
+ *
+ * @returns {function(*): Promise<AxiosResponse<any> | never>}
+ * @constructor
+ * Business Location
+ */
+export function BusinessLocationApi () {
+  return (dispatch) => {
+    return axios.get(`${server_api}/${version_api}/business/location`).then((response) => {
+      dispatch({
+        type: STORE_BUSINESS_LOCATION,
+        businesslocation: response.data
+      })
+    })
+  }
+}
+
+/**
+ *
+ * @returns {function(*): Promise<AxiosResponse<any> | never>}
+ * @constructor
+ * Business Tops
+ */
+export function BusinessTopsApi () {
+  return (dispatch) => {
+    return axios.get(`${server_api}/${version_api}/business/tops`).then((response) => {
+      dispatch({
+        type: STORE_BUSINESS_TOPS,
+        tops: response.data
       })
     })
   }

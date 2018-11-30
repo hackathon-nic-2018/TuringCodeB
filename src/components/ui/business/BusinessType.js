@@ -1,15 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-export default class BusinessLocation extends Component {
+export default class BusinessType extends Component {
 
   render () {
     return (
       <span>
-        <h1
-          className="animated fadeIn delay-2s turing-marine turing--business-location justify-content-center turing--mt">
-          Negocios según tu ubicaci&oacute;n - <span className="font-weight-bold turing-pink">Le&oacute;n</span>
-        </h1>
         <div className={'row'}>
           {
             this.props.business.map((business, index) => {

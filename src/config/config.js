@@ -7,6 +7,7 @@ export const STORE_NAV = 'NAVIGATION'
 export const STORE_SOCIAL_NAV = 'SOCIALMEDIA'
 export const STORE_HOME = 'CONTENTHOME'
 export const STORE_BUSINESS_LOCATION = 'BUSINESSLOCATION'
+export const STORE_BUSINESS_TOPS = 'BUSINESSTOPS'
 
 let api;
 
