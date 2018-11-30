@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import NavBrand from './navbrand/NavBrand'
-import NavLink from './navlink/NavLink'
-import { NavigationTuring } from '../../../api/ServerApi'
+import NavBrand from '../navbrand/NavBrand'
+import NavLink from '../navlink/NavLink'
+import { NavigationTuring } from '../../../../api/ServerApi'
 
 class Navigation extends Component {
 

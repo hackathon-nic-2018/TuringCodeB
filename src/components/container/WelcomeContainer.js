@@ -19,9 +19,9 @@ export default class WelcomeContainer extends Component {
           <div className={'container'}>
             <div className={'row'}>
               <div className={'col-md-6 turing--content-1'}>
-                <p className={'turing-marine turing-text-zn display-4'}>Acerca de nosotros</p>
+                <p className={'turing-marine display-4'}>Acerca de nosotros</p>
                 <p className={'turing-marine'}>
-                  <strong>Zoneg Nicaragua:</strong> es una app para buscar negocios de manera fácil y rápida
+                  <span className='turing-orange font-weight-bold'>Zoneg Nicaragua:</span> es una app para buscar negocios de manera fácil y rápida
                   de encontrar x o y producto si necesidad de moverse del lugar en el que
                   se encuentre y podrá tener comunicación con el establecimiento .
                 </p>
@@ -34,13 +34,32 @@ export default class WelcomeContainer extends Component {
           </div>
         </div>
 
+        <div className={'container turing--container-content'}>
+          <div className={'container'}>
+            <hr className={'turing--hr-line'}/>
+            <div className={'row'}>
+              <div className={'col-md-6 turing--content-2'}>
+                <img src={'/assets/media/img/home/hotel/hotel.png'} alt={'home'}/>
+              </div>
+
+              <div className={'col-md-6 turing--content-1'}>
+                <h1 className={'turing-marine display-4'}>Bar y Restaurantes</h1>
+                <p className={'turing-marine'}>
+                  Conoce los mejores lugares de pasa tiempo, tu familia y amigos puede decidir
+                  antes de salir donde distraerse o celebrar lo que deseas con la mejor informacion
+                  que te brindamos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div className={'container turing--container-content'}>
           <div className={'container'}>
             <hr className={'turing--hr-line'}/>
             <div className={'row'}>
               <div className={'col-md-6 turing--content-1'}>
-                <p className={'turing-marine turing-text-zn display-4'}>T&uacute;rismo</p>
+                <p className={'turing-marine display-4'}>T&uacute;rismo</p>
                 <p className={'turing-marine'}>
                   Brindamos la informaci&oacute;n que necesitas saber,  lugares que deseas conocer
                   con sus mejores comodidades.
@@ -48,7 +67,7 @@ export default class WelcomeContainer extends Component {
               </div>
 
               <div className={'col-md-6 turing--content-2'}>
-                <img src={'/assets/media/img/home/tourims.svg'} alt={'wal'}/>
+                <img src={'/assets/media/img/home/tourims/tourims.png'} alt={'wal'}/>
               </div>
             </div>
           </div>
@@ -59,15 +78,14 @@ export default class WelcomeContainer extends Component {
             <hr className={'turing--hr-line'}/>
             <div className={'row'}>
               <div className={'col-md-6 turing--content-2'}>
-                <img src={'/assets/media/img/home/1.png'} alt={'home'}/>
+                <img src={'/assets/media/img/home/hotel/hotel.png'} alt={'home'}/>
               </div>
 
               <div className={'col-md-6 turing--content-1'}>
-                <h1 className={'turing-marine'}>Zona de Negocios</h1>
+                <h1 className={'turing-marine display-4'}>Hoteles</h1>
                 <p className={'turing-marine'}>
-                  Keep all stakeholders – Product Managers, Business Analysts,
-                  System Architects, Designers and Developers – building consensus
-                  and communicating clearly.
+                  Tus desiciones están en tus manos, puedes tener la oportunidad de elegir lo que necesitas,
+                  tu comidad es lo primero.
                 </p>
               </div>
             </div>

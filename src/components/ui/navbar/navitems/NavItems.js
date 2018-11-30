@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom'
 
 export default class NavItems extends Component {
 
-  componentDidMount() {
-
-  }
-
   render () {
     return (
       <li

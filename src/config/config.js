@@ -1,4 +1,4 @@
-export const develop = 'http://localhost:3000';
+export const develop = 'http://192.168.43.103:3000';
 export const production = '';
 export const version_api = 'v1';
 

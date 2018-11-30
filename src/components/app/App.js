@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import Content from '../content/Content'
 import Footer from '../ui/footer/Footer'
-import Navigation from '../ui/navbar/Navigation'
+import Navigation from '../ui/navbar/navigation/Navigation'
 
 export default class App extends Component {
   static propTypes = {
