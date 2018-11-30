@@ -42,9 +42,9 @@ export default class Header extends Component {
             <i className={'far fa-search'}/> Explorar negocios
           </Link>
 
-          <Link to={'/signin'} className={'btn turing--btn-secundary shadow fadeInRight animated'}>
+          <div to={'/signin'} className={'btn turing--btn-secundary shadow fadeInRight animated'}>
             <i className={'far fa-sign-in'}/> Registrar mi negocio
-          </Link>
+          </div>
         </div>
       </header>
     )

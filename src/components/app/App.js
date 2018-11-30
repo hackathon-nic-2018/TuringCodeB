@@ -9,6 +9,14 @@ export default class App extends Component {
     children: PropTypes.object.isRequired
   };
 
+  componentDidMount() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+      document.querySelector('nav.turing--shadow').style.display = 'none'
+    }
+  }
+
   render () {
     const { children } = this.props;
     return (

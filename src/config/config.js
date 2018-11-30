@@ -1,4 +1,4 @@
-export const develop = 'http://homestead.test/api';
+export const develop = 'https://turing-code.firebaseapp.com';
 export const production = '';
 export const version_api = 'v1';
 
