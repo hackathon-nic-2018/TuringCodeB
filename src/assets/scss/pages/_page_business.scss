@@ -1,10 +1,25 @@
 .turing--content--business {
-  margin-top: 4.1rem;
+  margin-top: 3.7rem;
 
   .turing--search-content {
-    background: #fafafa;
+    background: url(https://about.gitlab.com/images/home/desk-bg.png) center center no-repeat !important;
+    //background: url(https://about.gitlab.com/images/home/unsplash-software-team.png) center center no-repeat !important;
+    background-size: cover;
+    position: relative;
     padding: 1.5em;
     font-size: 18px;
+    width: 100%;
+    height: 100%;
+
+    /*&:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(22,22,22,0.8);
+    }*/
   }
 
   .turing--searchbar {
