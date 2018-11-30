@@ -43,16 +43,27 @@
     top: 13em;
   }
 
+  @media (max-width: 768px) {
+    img.confitte2 {
+      width: 50%;
+      left: -4em;
+      position: absolute;
+      top: 3rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    img.confitte2 {
+      width: 50%;
+      left: -8em;
+      position: absolute;
+      top: 3rem;
+    }
+  }
+
   img.confitte {
     width: 60%;
     right: 0rem;
-    position: absolute;
-    top: 3rem;
-  }
-
-  img.confitte2 {
-    width: 50%;
-    left: -8em;
     position: absolute;
     top: 3rem;
   }
@@ -63,7 +74,17 @@
 }
 
 .turing--header {
-  height: 100vh;
+  @media (max-width: 768px) {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
  // background: #fafafa;
   display: flex;
   justify-content: center;
