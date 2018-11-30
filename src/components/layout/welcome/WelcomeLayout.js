@@ -1,13 +1,32 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 import WelcomeContainer from '../../container/welcome/WelcomeContainer'
+import { ContentHome } from '../../../api/ServerApi'
 
-export default class WelcomeLayout extends Component {
+class WelcomeLayout extends Component {
+
+  componentDidMount() {
+    this.props.ContentHome()
+  }
 
   render () {
     return(
       <div className={'turing--welcome'}>
-        <WelcomeContainer/>
+        <WelcomeContainer content={this.props.contenthome}/>
       </div>
     )
   }
 }
+
+const mapStateProps = (state) => {
+  return state
+}
+
+const matchDispatchProps = (dispatch) => {
+  return bindActionCreators({
+    ContentHome: ContentHome
+  }, dispatch)
+}
+
+export default connect(mapStateProps, matchDispatchProps)(WelcomeLayout)
