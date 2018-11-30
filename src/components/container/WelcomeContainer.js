@@ -15,7 +15,7 @@ export default class WelcomeContainer extends Component {
           </div>
         </div>
 
-        <div className={'container turing--container-content'}>
+        <div className={'container-fluid turing--container-content'}>
           <div className={'container'}>
             <div className={'row'}>
               <div className={'col-md-6 turing--content-1'}>
@@ -34,9 +34,8 @@ export default class WelcomeContainer extends Component {
           </div>
         </div>
 
-        <div className={'container turing--container-content'}>
+        <div className={'container-fluid turing--container-content turing--content--gay'}>
           <div className={'container'}>
-            <hr className={'turing--hr-line'}/>
             <div className={'row'}>
               <div className={'col-md-6 turing--content-2'}>
                 <img src={'/assets/media/img/home/food/food.png'} alt={'home'}/>
@@ -54,9 +53,8 @@ export default class WelcomeContainer extends Component {
           </div>
         </div>
 
-        <div className={'container turing--container-content'}>
+        <div className={'container-fluid turing--container-content'}>
           <div className={'container'}>
-            <hr className={'turing--hr-line'}/>
             <div className={'row'}>
               <div className={'col-md-6 turing--content-1'}>
                 <p className={'turing-marine display-4'}>T&uacute;rismo</p>
@@ -73,9 +71,8 @@ export default class WelcomeContainer extends Component {
           </div>
         </div>
 
-        <div className={'container turing--container-content'}>
+        <div className={'container-fluid turing--container-content turing--content--gay'}>
           <div className={'container'}>
-            <hr className={'turing--hr-line'}/>
             <div className={'row'}>
               <div className={'col-md-6 turing--content-2'}>
                 <img src={'/assets/media/img/home/hotel/hotel.png'} alt={'home'}/>

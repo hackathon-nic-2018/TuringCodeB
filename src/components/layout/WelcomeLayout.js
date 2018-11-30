@@ -5,7 +5,7 @@ export default class WelcomeLayout extends Component {
 
   render () {
     return(
-      <div className={'container-fluid turing--welcome'}>
+      <div className={'turing--welcome'}>
         <WelcomeContainer/>
       </div>
     )
