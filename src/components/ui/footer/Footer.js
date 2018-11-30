@@ -8,6 +8,7 @@ export default class Footer extends Component {
           <div className="text-center turing--copyright">
             <p className="text-center turing-marine"><i className="fal fa-copyright"/> 2018 | Zona de Negocios</p>
             <p className={'turing-marine text-center'}>Dise&ntilde;o y Desarrollo por <code>Turing Code</code></p>
+            <a href={'/sitemap'} className={'turing-marine text-center'}>Sitemap</a>
           </div>
         </div>
       </div>

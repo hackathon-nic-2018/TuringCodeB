@@ -12,12 +12,24 @@
   border-top: 1px solid #ff76152b;
 }
 
-input {
-  border-radius: 25px!important;
-  //height: 34px !important;
-  background: #f8f9fa !important;
-  outline: 0;
-  border: 1px solid transparent;
+@media (max-width: 767px) {
+  input {
+    width: 100% !important;
+    border-radius: 25px!important;
+    background: #f8f9fa !important;
+    outline: 0;
+    border: 1px solid transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  input {
+    width: 60% !important;
+    border-radius: 25px!important;
+    background: #f8f9fa !important;
+    outline: 0;
+    border: 1px solid transparent;
+  }
 }
 
 .card {

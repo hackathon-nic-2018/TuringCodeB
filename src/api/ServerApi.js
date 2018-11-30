@@ -17,7 +17,7 @@ import {
  */
 export function NavigationTuring () {
   return (dispatch) => {
-    return axios.get(`${server_api}/${version_api}/navigation`).then((response) => {
+    return axios.get(`${server_api}/${version_api}/menu/menu.json`).then((response) => {
       dispatch({
         type: STORE_NAV,
         navigationturing: response.data
@@ -51,7 +51,7 @@ export function SocialMediaTuring () {
  */
 export function ContentHome () {
   return (dispatch) => {
-    return axios.get(`${server_api}/${version_api}/content-home`).then((response) => {
+    return axios.get(`${server_api}/${version_api}/menu/home.json`).then((response) => {
       dispatch({
         type: STORE_HOME,
         contenthome: response.data
@@ -68,7 +68,7 @@ export function ContentHome () {
  */
 export function BusinessLocationApi () {
   return (dispatch) => {
-    return axios.get(`${server_api}/${version_api}/business/location`).then((response) => {
+    return axios.get(`${server_api}/${version_api}/business/business_location.json`).then((response) => {
       dispatch({
         type: STORE_BUSINESS_LOCATION,
         businesslocation: response.data
@@ -85,7 +85,7 @@ export function BusinessLocationApi () {
  */
 export function BusinessTopsApi () {
   return (dispatch) => {
-    return axios.get(`${server_api}/${version_api}/business/tops`).then((response) => {
+    return axios.get(`${server_api}/${version_api}/business/business_tops.json`).then((response) => {
       dispatch({
         type: STORE_BUSINESS_TOPS,
         tops: response.data
