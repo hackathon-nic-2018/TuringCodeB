@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Header extends Component {
 
@@ -35,6 +36,16 @@ export default class Header extends Component {
             </a>
           </li>
         </ul>
+
+        <div className={'turing--group-btn'}>
+          <Link to={'/business'} className={'btn turing--btn-primary shadow'}>
+            <i className={'far fa-search'}/> Explorar negocios
+          </Link>
+
+          <Link to={'/signin'} className={'btn turing--btn-secundary shadow'}>
+            <i className={'far fa-sign-in'}/> Registrar mi negocio
+          </Link>
+        </div>
       </header>
     )
   }

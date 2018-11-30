@@ -6,7 +6,7 @@ export default class WelcomeContainer extends Component {
     return (
       <div className={'content'}>
         <div className={'container-fluid turing--container-banner'}>
-          <img className={'phone'} src={'/assets/media/img/home/phone.png'} alt={'Phone'}/>
+          {/*<img className={'phone'} src={'/assets/media/img/home/phone.png'} alt={'Phone'}/>*/}
           <img className={'confitte'} src={'/assets/media/img/home/confetti-right@2x.png'} alt={'Confitte 1'}/>
           <img className={'confitte2'} src={'/assets/media/img/home/confetti-left@2x.png'} alt={'Confitte 2'}/>
 
@@ -39,7 +39,7 @@ export default class WelcomeContainer extends Component {
             <hr className={'turing--hr-line'}/>
             <div className={'row'}>
               <div className={'col-md-6 turing--content-2'}>
-                <img src={'/assets/media/img/home/hotel/hotel.png'} alt={'home'}/>
+                <img src={'/assets/media/img/home/food/food.png'} alt={'home'}/>
               </div>
 
               <div className={'col-md-6 turing--content-1'}>

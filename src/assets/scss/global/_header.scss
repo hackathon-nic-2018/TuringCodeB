@@ -20,8 +20,19 @@
   }
 }
 
+.turing--container--header {
+  img.confitte {
+    width: 100%;
+    right: 0;
+    top: 3rem;
+    float: right;
+  }
+
+}
+
 .turing--container-banner {
-  background: #fafafa59;
+  //background: #fafafa59;
+  background: #fafafa;
   border-bottom: 1px solid #dee2e657;
 
   .phone {
@@ -44,6 +55,10 @@
     left: -8em;
     position: absolute;
     top: 3rem;
+  }
+
+  .turing--group-btn {
+    margin-top: 2em;
   }
 }
 
