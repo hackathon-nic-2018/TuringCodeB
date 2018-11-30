@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import SerachBar from '../../ui/searchbar/SerachBar'
-import TopBusiness from '../../ui/business/TopBusiness'
-import BusinessLocation from '../../ui/business/BusinessLocation'
-import { BusinessLocationApi, BusinessTopsApi } from '../../../api/ServerApi'
+import { BusinessTopsApi } from '../../../api/ServerApi'
+import BusinessType from '../../ui/business/BusinessType'
+import SerachBarType from '../../ui/searchbar/SerachBarType'
 
-class BusinessContainer extends Component {
+class BusinessContainerType extends Component {
 
   componentDidMount () {
-    this.props.BusinessLocationApi()
     this.props.BusinessTopsApi()
   }
 
@@ -17,15 +15,15 @@ class BusinessContainer extends Component {
     return (
       <div className={'turing--content--business'}>
         {/*Search bar*/}
-        <SerachBar/>
+        <SerachBarType/>
 
         {/*Business Content*/}
         <div className={'container turing--container-content'}>
           <div className={'container'}>
-            <TopBusiness tops={this.props.tops}/>
+            {/*<TopBusiness tops={this.props.tops}/>*/}
 
             {/* Business Location*/}
-            <BusinessLocation business={this.props.businesslocation}/>
+            <BusinessType business={this.props.businesslocation}/>
           </div>
         </div>
 
@@ -40,9 +38,8 @@ const mapStateProps = (state) => {
 
 const matchDispatchProps = (dispatch) => {
   return bindActionCreators({
-    BusinessLocationApi: BusinessLocationApi,
     BusinessTopsApi: BusinessTopsApi
   }, dispatch)
 }
 
-export default connect(mapStateProps, matchDispatchProps)(BusinessContainer)
+export default connect(mapStateProps, matchDispatchProps)(BusinessContainerType)

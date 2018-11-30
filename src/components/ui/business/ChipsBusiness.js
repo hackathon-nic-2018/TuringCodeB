@@ -1,28 +1,30 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class ChipsBusiness extends Component {
   render () {
     return (
       <div className={'container'}>
         <div className='row justify-content-center'>
-          <div className={'turing-tourism shadow'}>
+          <Link to={'/business/tourims'} className={'turing-tourism shadow'}>
             <i className={'fal fa-umbrella-beach fa-lg'}/> T&uacute;rismo
-          </div>
-          <div className={'turing-gastronomy shadow'}>
+          </Link>
+
+          <Link to={'/business/bar_and_restaurant'} className={'turing-gastronomy shadow'}>
             <i className={'fal fa-utensils fa-lg'}/> Bar y Restaurantes
-          </div>
+          </Link>
 
-          <div className={'turing-hotels shadow'}>
+          <Link to={'/business/hotel'} className={'turing-hotels shadow'}>
             <i className={'fal fa-hotel fa-lg'}/> Hoteles
-          </div>
+          </Link>
 
-          <div className={'turing-store shadow'}>
+          <Link to={'/business/establishments'} className={'turing-store shadow'}>
             <i className={'fal fa-house-flood fa-lg'}/> Establecimientos
-          </div>
+          </Link>
 
-          <div className={'turing-business shadow'}>
+          <Link to={'/business/small_business'} className={'turing-business shadow'}>
             <i className={'fal fa-store fa-lg'}/> Peque&ntilde;os negocios
-          </div>
+          </Link>
         </div>
       </div>
     )
