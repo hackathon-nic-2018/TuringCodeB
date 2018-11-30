@@ -18,7 +18,7 @@ class Navigation extends Component {
           <NavBrand/>
 
           <div className="navbar-toggler" data-toggle="collapse" data-target="#TuringCode" aria-label="Toggle navigation">
-            <i className={'fas fa-ellipsis-v fa-lg'}/>
+            <i className={'far fa-ellipsis-v fa-lg'}/>
           </div>
 
           <NavLink menu={this.props.navigationturing}/>

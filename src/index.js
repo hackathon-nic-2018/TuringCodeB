@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker'
 import TuringRoutes from './routes'
 import store from './stores/stores'
-
+import 'bootstrap/js/src/index'
 
 render(
   <Provider store={store}>
