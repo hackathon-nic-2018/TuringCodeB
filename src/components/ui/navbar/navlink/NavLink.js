@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
-import NavItems from './NavItems'
+import NavItems from './navitems/NavItems'
 
 export default class NavLink extends Component {
 	render() {
