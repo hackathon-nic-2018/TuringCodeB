@@ -7,8 +7,8 @@ export default class WelcomeContainer extends Component {
       <div className={'content'}>
         <div className={'container-fluid turing--container-banner'}>
           {/*<img className={'phone'} src={'/assets/media/img/home/phone.png'} alt={'Phone'}/>*/}
-         {/* <img className={'confitte'} src={'/assets/media/img/home/confetti-right@2x.png'} alt={'Confitte 1'}/>*/}
-          <img className={'confitte2'} src={'/assets/media/img/home/confetti-left@2x.png'} alt={'Confitte 2'}/>
+          <img className={'confitte fadeInRight animated'} src={'/assets/media/img/home/confetti-right@2x.png'} alt={'Confitte 1'}/>
+          <img className={'confitte2 fadeInLeft animated'} src={'/assets/media/img/home/confetti-left@2x.png'} alt={'Confitte 2'}/>
 
           <div className={'container'}>
             <Header/>
@@ -38,7 +38,7 @@ export default class WelcomeContainer extends Component {
               )
             } else {
               return (
-                <div className={'container-fluid turing--container-content turing--content--gay'}>
+                <div className={'container-fluid turing--container-content turing--content--gay'} key={index}>
                   <div className={'container'}>
                     <div className={'row'}>
                       <div className={'col-md-6 turing--content-2'}>

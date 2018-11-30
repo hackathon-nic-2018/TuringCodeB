@@ -20,10 +20,9 @@ class BusinessContainerType extends Component {
         {/*Business Content*/}
         <div className={'container turing--container-content'}>
           <div className={'container'}>
-            {/*<TopBusiness tops={this.props.tops}/>*/}
 
             {/* Business Location*/}
-            <BusinessType business={this.props.businesslocation}/>
+            <BusinessType business={this.props.businesslocation} type={this.props.typebusiness}/>
           </div>
         </div>
 

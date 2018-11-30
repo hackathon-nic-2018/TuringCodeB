@@ -7,7 +7,7 @@ export default class BusinessLayoutType extends Component {
   render () {
     return(
       <div className={'turing--business'}>
-        <BusinessContainerType/>
+        <BusinessContainerType typebusiness={ this.props.match.params.type } typename={ this.props.names }/>
       </div>
     )
   }

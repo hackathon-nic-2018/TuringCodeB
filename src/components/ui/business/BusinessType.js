@@ -6,6 +6,10 @@ export default class BusinessType extends Component {
   render () {
     return (
       <span>
+         <h1 className="animated fadeIn delay-2s turing-marine turing--business-location justify-content-center turing--mt">
+           { this.props.type}
+        </h1>
+
         <div className={'row'}>
           {
             this.props.business.map((business, index) => {
