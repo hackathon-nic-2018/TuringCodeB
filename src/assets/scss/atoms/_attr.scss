@@ -1,0 +1,56 @@
+.turing--hr-line-blue {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #4da5fb30;
+}
+
+.turing--hr-line {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #ff76152b;
+}
+
+input {
+  border-radius: 25px!important;
+  //height: 34px !important;
+  background: #f8f9fa !important;
+  outline: 0;
+  border: 1px solid transparent;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+
+  .card-img-top {
+    height: 140px !important;
+  }
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  margin: 5px auto;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+  }
+}
+

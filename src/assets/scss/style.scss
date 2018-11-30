@@ -1,0 +1,18 @@
+//Variables
+@import "variables";
+
+//Font Awesome
+@import "awesome/awesome";
+
+//Code Custom
+@import "atoms/color";
+@import "atoms/button";
+@import "global/header";
+@import "atoms/attr";
+@import "pages/page_welcome";
+@import "pages/page_business";
+@import "pages/page_profile";
+
+html, body {
+  font-family: "freight-sans-pro",sans-serif !important;
+}

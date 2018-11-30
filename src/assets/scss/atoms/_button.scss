@@ -1,0 +1,33 @@
+//Turing BTN
+
+//Text color primary
+.turing--btn-primary {
+  color: #fff !important;
+  background-color: $turing--text-color-blue;
+  border-color: $turing--text-color-blue;
+  font-weight: 600;
+  margin: 10px;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $turing--text-color-blue;
+    color: $turing--text-color-blue !important;
+  }
+}
+
+//text color secundary
+.turing--btn-secundary {
+  color: #fff !important;
+  background-color: $turing--text-color-pink;
+  border-color: $turing--text-color-pink;
+  font-weight: 600;
+  margin: 10px;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $turing--text-color-pink;
+    color: $turing--text-color-pink !important;
+  }
+}

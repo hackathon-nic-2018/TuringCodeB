@@ -1,0 +1,131 @@
+.turing--shadow {
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+}
+
+.turing--navbrand {
+  font-weight: 600;
+  color: $turing--color-icon;
+
+  span {
+    margin-left: 0.5rem;
+    font-size: 18px;
+  }
+
+  small {
+    font-weight: 500;
+    font-size: 11px;
+    position: absolute;
+    margin-left: -3.5rem;
+    margin-top: 1.4rem;
+  }
+}
+
+.turing--container--header {
+  img.confitte {
+    width: 100%;
+    right: 0;
+    top: 3rem;
+    float: right;
+  }
+
+}
+
+.turing--container-banner {
+  //background: #fafafa59;
+  background: #fafafa;
+  border-bottom: 1px solid #dee2e657;
+
+  .phone {
+    position: absolute;
+    right: 12.5em;
+    transform: rotate(20deg);
+    height: 340px;
+    top: 13em;
+  }
+
+  img.confitte {
+    width: 60%;
+    right: 0rem;
+    position: absolute;
+    top: 3rem;
+  }
+
+  img.confitte2 {
+    width: 50%;
+    left: -8em;
+    position: absolute;
+    top: 3rem;
+  }
+
+  .turing--group-btn {
+    margin-top: 2em;
+  }
+}
+
+.turing--header {
+  height: 100vh;
+ // background: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    width: 35%;
+    padding-bottom: 3em;
+    margin-top: 12em;
+  }
+
+  .turing--title {
+    .turing--name-app {
+      margin-top: 1em;
+      margin-bottom: 0.2em;
+      font-weight: 900;
+    }
+
+    p {
+      color: $turing-text-description;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  ul {
+    margin-left: 2.5em;
+    margin-top: 2em;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $turing--text-color-primary;
+  font-weight: 600;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fd8f42;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.vh {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 900;
+}
+
+.turing--copyright {
+  line-height: 0;
+  padding: 1rem;
+
+  p:nth-child(2) {
+    font-weight: 600;
+  }
+}
+
